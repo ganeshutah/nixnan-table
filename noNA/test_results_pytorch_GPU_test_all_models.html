@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+</head>
+<body>
+  <div class="table-responsive">
+    <h1>Analysis of nonan trace</h1>
+<table>
+<thead>
+<tr>
+<th>Folder</th>
+<th>NameOfKernel</th>
+<th>FunctionsRun</th>
+<th>INSTs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ganesh</td>
+<td>void implicit_convolve_sgemm</td>
+<td>{void implicit_convolve_sgemm}</td>
+<td><a href="detail_1.html">Details 1</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void cudnn::bn_fw_inf_1C11_kernel_NCHW</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void at::native::vectorized_elementwise_kernel</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void cudnn::winograd::generateWinogradTilesKernel</td>
+<td>{void cudnn::winograd::generateWinogradTilesKernel, void implicit_convolve_sgemm}</td>
+<td><a href="detail_2.html">Details 2</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>cudnn_infer_ampere_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v1</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void cudnn::cnn::kern_precompute_indices</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void precomputed_convolve_sgemm</td>
+<td>{void at::native::vectorized_elementwise_kernel, void cudnn::winograd::generateWinogradTilesKernel, void implicit_convolve_sgemm, void precomputed_convolve_sgemm}</td>
+<td><a href="detail_3.html">Details 3</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>cudnn_infer_ampere_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v1</td>
+<td>{void implicit_convolve_sgemm}</td>
+<td><a href="detail_4.html">Details 4</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void cudnn::ops::nchwToNhwcKernel</td>
+<td>{void cudnn::ops::nchwToNhwcKernel, void implicit_convolve_sgemm}</td>
+<td><a href="detail_5.html">Details 5</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void at::native::reduce_kernel</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void gemmSN_TN_kernel</td>
+<td>{void at::native::reduce_kernel, void cudnn::ops::nchwToNhwcKernel, void gemmSN_TN_kernel}</td>
+<td><a href="detail_6.html">Details 6</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void</td>
+<td>{void, void at::native::reduce_kernel, void gemmSN_TN_kernel}</td>
+<td><a href="detail_7.html">Details 7</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void cudnn::ops::nhwcToNchwKernel</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void cask_cudnn_infer::computeOffsetsKernel</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>cudnn_infer_ampere_scudnn_128x32_relu_interior_nn_v1</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void cutlass_cudnn_infer::Kernel</td>
+<td>{void at::native::reduce_kernel, void cudnn::ops::nhwcToNchwKernel}</td>
+<td><a href="detail_8.html">Details 8</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>cudnn_infer_ampere_scudnn_128x64_relu_interior_nn_v1</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>ampere_sgemm_32x32_sliced1x4_tn</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void at::native::unrolled_elementwise_kernel</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void splitKreduce_kernel</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void at::native::elementwise_kernel</td>
+<td>{void at::native::elementwise_kernel, void at::native::reduce_kernel, void at::native::vectorized_elementwise_kernel}</td>
+<td><a href="detail_9.html">Details 9</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void dot_kernel</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void reduce_1Block_kernel</td>
+<td>{void at::native::vectorized_elementwise_kernel, void reduce_1Block_kernel, void splitKreduce_kernel}</td>
+<td><a href="detail_10.html">Details 10</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>ampere_sgemm_64x32_sliced1x4_tn</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>ampere_sgemm_128x32_sliced1x4_tn</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void gemmk1_kernel</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void gemvNSP_kernel</td>
+<td>{void at::native::reduce_kernel, void at::native::vectorized_elementwise_kernel, void gemvNSP_kernel}</td>
+<td><a href="detail_11.html">Details 11</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>ampere_sgemm_32x32_sliced1x4_nn</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void cutlass::Kernel</td>
+<td>{void RNN_blockPersist_fp_LSTM, void at::native::vectorized_elementwise_kernel, void cudnn::dropout_apply_mask, void cudnn::dropout_generate_mask, void cutlass::Kernel}</td>
+<td><a href="detail_12.html">Details 12</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void at::native::</td>
+<td>{void at::native::, void cutlass::Kernel}</td>
+<td><a href="detail_13.html">Details 13</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>ampere_sgemm_32x128_tn</td>
+<td>{void at::native::vectorized_elementwise_kernel, void splitKreduce_kernel}</td>
+<td><a href="detail_14.html">Details 14</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>ampere_sgemm_32x32_sliced1x4_nt</td>
+<td>{void at::native::elementwise_kernel, void at::native::reduce_kernel, void at::native::vectorized_elementwise_kernel}</td>
+<td><a href="detail_15.html">Details 15</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>ampere_sgemm_32x128_nn</td>
+<td>{void at::native::vectorized_elementwise_kernel, void cutlass::Kernel}</td>
+<td><a href="detail_16.html">Details 16</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>cudnn::initstates</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void RNN_blockPersist_fp_LSTM</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void cudnn::dropout_generate_mask</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void cudnn::dropout_apply_mask</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>std::enable_if</td>
+<td>{std::enable_if, void at::native::, void cutlass::Kernel}</td>
+<td><a href="detail_17.html">Details 17</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void LSTM_elementWise_bp1</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void RNN_blockPersist_bp_LSTM_FMA</td>
+<td>{std::enable_if, void at::native::elementwise_kernel, void at::native::reduce_kernel, void cutlass::Kernel, void gemvNSP_kernel}</td>
+<td><a href="detail_18.html">Details 18</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void gemv2T_kernel_val</td>
+<td>{std::enable_if, void at::native::elementwise_kernel, void at::native::reduce_kernel, void cudnn::dropout_apply_mask, void gemvNSP_kernel}</td>
+<td><a href="detail_19.html">Details 19</a></td>
+</tr>
+<tr>
+<td>ganesh</td>
+<td>void GENERIC_elementWise_bp2</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+</tbody>
+</table>
+<h2>Summary</h2>
+<ul>
+<li>Processed 42 kernel records from nonan</li>
+<li>Total instructions with errors: 6942</li>
+<li>Total unique functions: 19</li>
+</ul>
+  </div>
+</body>
+</html>
